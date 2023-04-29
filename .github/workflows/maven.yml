@@ -27,6 +27,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - run: mv target/banner-*-jar-with-dependencies.jar banner.jar
     - name: Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
@@ -35,5 +36,5 @@ jobs:
         prerelease: true
         title: "Nightly"
         files: |
-          target/banner-1.0-jar-with-dependencies.jar
+          banner.jar
       
