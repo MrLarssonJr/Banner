@@ -2,8 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.Calendar;
-import java.util.Date;
 
 
 class Model {
@@ -25,7 +23,7 @@ class Model {
             this.baseline1 = new NumberModel(36, 1);
         }
 
-        {//Initiliase baseline2
+        {//Initialise baseline2
             this.baseline2 = new NumberModel(72, 1);
         }
 
