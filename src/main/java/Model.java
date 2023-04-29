@@ -49,10 +49,10 @@ class Model {
         this.updateDelay.setMin(0);
 
         this.items = new CircularQueue<>();
-        BannerItem i = new ConstantBannerItem("HEJ SQUVALP!");
+        BannerItem i = new ConstantBannerItem("HEJ QUARNEVALEN!");
         i.setSplitIndex(4);
         this.items.addElement(i);
-        i = new CountDownBannerItem("BYGGSTART", "TID TILL BYGG: ", "s!", secondsUntil(LocalDateTime.of(2018, 5, 11, 14, 8)), 1000);
+        i = new CountDownBannerItem("BYGGSTART", "TID TILL BYGG: ", "s!", secondsUntil(LocalDateTime.of(2023, 5, 6, 6, 8)), 1000);
         this.items.addElement(i);
 
         Font f = new JLabel().getFont();
